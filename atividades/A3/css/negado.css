@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(194, 157, 223)
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.cadastro input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #000;
+    background: rgba(255, 189, 241, 0.959);
+    border-radius: 20px;
+    transition: 0.2s;
+}
