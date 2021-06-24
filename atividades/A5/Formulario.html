@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario">
+    <meta name="keywords" content="informações">
+    <meta name="author" content="Julia Andrade">
+    <title>Formulario</title>
+
+    <head>
+
+        <body>
+            <br></br>
+            <form>
+                <center>
+                    <h1> <strong>Responda o questionario para marcar sua consulta dentaria</strong></h1>
+                </center>
+
+                <br></br>
+                <h3> <strong>Informações Pessoais</strong></h3>
+
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" value="Julia" name="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" minlength="5" autocomplete="off">
+                <br></br>
+                <label for="idIdade">Idade:</label><br>
+                <input type="number" id="idIdade" name="idade" min="1" max="140">
+                <br></br>
+                <label for="tel">Telefone:</label><br>
+                <input type="tel" id="tel" placeholder="(99) 99999-9999" pattern="(/([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Fone no formato (99) 99999-9999">
+                <br></br>
+                <input type="radio" id="M" name="genero" value="M">
+                <label for="M">Masculino</label><br>
+                <input type="radio" id="F" name="genero" value="F">
+                <label for="F">Feminino</label><br>
+                <input type="radio" id="o" name="genero" value="o">
+                <label for="o">Outro</label><br>
+                <hr>
+                <h3> <strong>Dados da consulta</strong></h3>
+                <label for="dt">Escolha a data para a consulta:</label><br>
+                <input type="datetime-local" id="dt" name="dt">
+                <br></br>
+                <label for="idHora">Escolha a hora:</label><br>
+                <input type="time" id="idHora" name="Hora">
+                <br></br>
+                <br>Com qual Dr. deseja marcar a consulta?</br>
+
+                <input type="radio" id="R" name="medico" value="M">
+                <label for="R">Dr. Renata</label><br>
+                <input type="radio" id="S" name="medico" value="F">
+                <label for="S">Dr. Samantha</label><br>
+                <input type="radio" id="G" name="medico" value="o">
+                <label for="G">Dr. Guillherme</label><br>
+                <br>Qual seria a forma de pagamento?</br>
+                <input list="pagamento" />
+                <datalist id="pagamento">
+                <option value="Convenio">
+                <option value="Dinheiro">
+                <option value="Cartão de crédito">
+                <option value="Cartão de débito">
+                <option value="Cheque">
+                <option value="Pix">
+            </datalist>
+                <hr>
+                <h3> <strong>Sobre</strong></h3>
+                <br>O que está sentindo?</br>
+                <input type="checkbox" id="dor" name="dor" value="Dor">
+                <label for="dor">Dor</label><br>
+                <label for="valor">Se sente dor, qual o nivel dela?</label><br> 1 <input type="range" id="valor" min="0" max="10" step="1"> 10
+                <br></br>
+                <input type="checkbox" id="Sensibilidade" name="Sensibilidade" value="Sensibilidade">
+                <label for="Sensibilidade">Sensibilidade</label><br>
+                <input type="checkbox" id="febre" name="febre" value="febre">
+                <label for="febre">Febre</label><br>
+                <input type="checkbox" id="Nada" name="Nada" value="Nada">
+                <label for="Nada">Outro</label><br>
+                <br></br>
+                <label for="idQtd">Tem sintomas a quantos dias?</label><br>
+                <input type="number" id="idQtd" name="Quantidade" min="0" max="100">
+                <br></br>
+                <label for="arq">Adicione o seu encaminhamento</label><br>
+                <input type="file" id="arq" name="arq" multiple>
+                <hr>
+                <h3> <strong>Finalização</strong></h3>
+                <h4> <strong>Sua consulta será marcada!</strong></h4>
+                <br></br>
+                <br>Faça um comentario sobre nosso trabalho:</br>
+                <textarea name="message" rows="10" cols="35">
+                </textarea>
+                <br></br>
+                <input type="submit" value="Enviar"><br>
+                <input type="reset" value="Apagar">
+                <br></br>
+                <label for="cor">Quer contribuir com o design do nosso futuro formulario? Escolha uma cor </label><br>
+                <input type="color" id="cor" name="cor">
+            </form>
+        </body>
+    </head>
