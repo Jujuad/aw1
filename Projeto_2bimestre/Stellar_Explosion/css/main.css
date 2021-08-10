@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to left, #290e47,#17032e, #0a0811, #000000);
+}
+
+.fas{
+    color: white;
+    font-size: 400px;
+}
+
+.tittle{
+    color: white;
+    font-size: 28px ;
+    font-weight: bold;
+}
+
+.cadastro input[type="submit"] {
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold ; 
+    border: #17032e;
+    outline: none;
+    height: 35px;
+    width: 520px;
+    color: #17032e;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: 1.5s;
+}
+
+.cadastro input[type="submit"]:hover {
+    cursor: pointer;
+    background: #d0c2e2de;
+    transition: .5s;
+}
+
+.cadastro a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 20px;
+    color: #1b1b1b;
+    transition: .5s;
+}
+
+.cadastro a:hover {
+    transition: 0.2s;
+    color: #250441a9;
+}
+
+@media(max-width: 1150px){
+    .fas{
+        font-size: 700px;
+    }
+    
+    .tittle{
+        font-size: 50px ;
+    } 
+
+    .cadastro input[type="submit"]{
+        height: 55px;
+        width: 750px;
+        font-size: 25px;
+    }
+}
