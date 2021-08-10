@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c60393c168.js" crossorigin="anonymous"></script>
+    <title>login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="tittle tittle-primary">Bem vindo de volta!</h2>
+                <br>
+                <p class="description description-primary">Conecte-se com as estrelas.</p>
+                <p class="description description-primary">Faça login com suas informações pessoais.</p>
+                <br>
+                <i class="fas fa-user-astronaut"></i>
+                <br></br>
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>
+            <div class="second-column">
+                <h2 class="tittle tittle-second">Cadastre-se</h2>
+                <br>
+                <div class="social.media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-facebook-f"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-google-plus-g"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-linkedin-in"></i></li>
+                        </a>
+                    </ul>
+                </div> <!-- Fim Social-media-->
+                <br>
+                <p class="description">Se preferir, utilize seu e-mail para se registrar.</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-unlock-alt icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+
+                    <br>
+                    <center>
+                        <ul>
+                            <li><a id="cadastro" class="btn btn-second" href="central.html">sign up</a></li>
+                        </ul>
+                    </center>
+                    <!-- <button id="cadastro" class="btn btn-second">sign up</button> -->
+                </form>
+            </div> <!-- secund colunm -->
+        </div> <!-- First content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="tittle tittle-primary">Olá, astronauta!</h2>
+                <p class="description description-primary">Informe suas informações pessoais</p>
+                <p class="description description-primary">e desvende o universo conosco.</p>
+                <br>
+                <i class="fas fa-user-astronaut"></i>
+                <br></br>
+                <button id="signup" class="btn btn-primary">sign up</button>
+            </div>
+            <div class="second-column">
+                <h2 class="tittle tittle-second">Faça login</h2>
+                <br>
+                <div class="social.media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-facebook-f"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-google-plus-g"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fab fa-linkedin-in"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <br>
+                <p class="description">Insira o e-mail cadastrado.</p>
+                <form class="form">
+                    <form class="form">
+
+                        <label class="label-input" for="">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="E-mail">
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="fas fa-unlock-alt icon-modify"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+                        <br>
+                        <a href="#">Esqueci minha senha</a>
+                        <br>
+                        <center>
+                            <ul>
+                                <li><a id="cadastro" class="btn btn-second" href="central.html">sign in</a></li>
+                            </ul>
+                        </center>
+                        <!--   <button id="login" class="btn btn-second">sign in</button> -->
+                    </form>
+            </div> <!-- second colunm -->
+        </div> <!-- Second content -->
+    </div>
+    <script>
+        var btnSignin = document.querySelector("#signin");
+        var btnSignup = document.querySelector("#signup");
+
+        var body = document.querySelector("body");
+
+
+        btnSignin.addEventListener("click", function () {
+            body.className = "sign-in-js";
+        });
+
+        btnSignup.addEventListener("click", function () {
+            body.className = "sign-up-js";
+        });
+
+    </script>
+</body>
+
+
+</html>
