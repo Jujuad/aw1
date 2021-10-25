@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7ddce9;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ct {
+    background: white;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cont.localizacao {
+    margin-top: 0.5rem;
+}
+
+fieldset {
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+legend {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #3b3b3b;
+    padding-left: 0.5rem;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+input#Nome,
+input#Sobrenome,
+input#DataNasc,
+input#Email, 
+input#Telefone,
+input#Cpf {
+    width: 41rem;
+}
+
+input#End,
+input#Bairro,
+input#Numero,
+input#Cep {
+    width: 20rem;
+}
+
+
+#End,
+#Bairro,
+#Numero,
+#Cep {
+    display: block;
+}
+
+.submitbtn {
+    display: flex;
+}
+
+#enviar {
+    margin-right: 1rem;
+}
+
+#enviar,
+.apagar {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 5rem;
+    padding-left: 0;
+    background-color: #ff6791;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#enviar:hover,
+.apagar:hover {
+    background-color: #ffc1d2;
+}
+
+.errorInput {
+    border: 2px solid rgb(207, 53, 53) !important;
+}
