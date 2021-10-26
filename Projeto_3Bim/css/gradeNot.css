@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f3df;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+h2 {
+  color: #7f807fc5;
+  font-size: 2em;
+}
+#retanguloEsquerda {
+  position: absolute;
+  background-color: #ffc898bd;
+  height: 100px;
+  width: 200px;
+  left: 0px;
+  top: 555px;
+}
+#retanguloDireita {
+  position: absolute;
+  background-color: #beff98b0;
+  height: 100%;
+  width: 200px;
+  left: 1200px;
+  opacity: 0;
+}
+
+#retanguloBaixo {
+  position: absolute;
+  background-color: #beff98b0;
+  height: 100px;
+  width: 1000px;
+  left: 365px;
+  top: 555px;
+}
+.barrinha {
+  position: absolute;
+  height: 10px;
+  width: 165px;
+  left: 200px;
+}
+#barrinha1 {
+  top: 580px;
+  background-color: #beff98;
+}
+#barrinha2 {
+  top: 620px;
+  background-color: #ffc898;
+}
+#grade {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  top: 100px;
+  position: relative;
+}
+#grade div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url(janela.jpg);
+  background-size: 600px 400px;
+  transition: 0, 25s ease-in-out;
+}
+#grade div:hover {
+  z-index: 10;
+  opacity: 0.7;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px #cdf2ca;
+}
+@media (max-width: 1150px) {
+  .barrinha {
+    opacity: 0;
+  }
+  #retanguloBaixo {
+    opacity: 0;
+  }
+  #retanguloDireita {
+    opacity: 1;
+  }
+  #retanguloEsquerda {
+    opacity: 0;
+  }
+  h2 {
+    opacity: 0;
+  }
+  body {
+    align-items: flex-start;
+  }
+  #grade {
+    left: 30px;
+  }
+}
